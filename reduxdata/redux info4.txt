@@ -1,0 +1,29 @@
+action is the only way to interact with your store object
+carry some information from your app to redux store
+Plain javascript objects
+
+Have a 'type' property is typically defined as string constants
+
+
+Reducers
+
+Specify how the app's states changes in response to action sent to the store
+
+function that accept states and action as arguments, and return the next state of the application
+
+(previousState, action) => newState
+
+
+
+Redux store
+One store for the entire application
+Do:
+Holds application state
+Allow access to state via getState()
+Allow state to be update via dispatch(action)
+Register listener via subscribe(listener) //It's parameter executed anytime the state in redux store changes
+Handles unregistering of listeners via the function return by subscribe(listener)
+
+function action creators (allow happen in single place, it won't replicate to all scopes)
+
+
